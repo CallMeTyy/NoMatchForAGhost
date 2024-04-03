@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ghost
+  m_Shader: {fileID: 4800000, guid: e2fa7f0551424ad4c8ba1c5011a73122, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _Dissolve: 14.6
+    - _DissolveAmount: 0
+    - _EdgeSize: 0.02
+    - _EmissionAmount: 1
+    - _EndPosition: 0.2363255
+    - _FresnelBias: 0
+    - _FresnelPower: 5.53
+    - _FresnelScale: 16.91
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ShowPosition: 3.24
+    - _SpawnEffect: 0.25561765
+    - _SpawnEmissionThickness: 0.03
+    - _SpawnNoisePower: 0.47
+    - _SpawnVoronoiPower: 0.27
+    - _Speed: 0
+    - _StartPosition: 1.4593257
+    - _TessEdgeLength: 16
+    - _TessMax: 25
+    - _TessMaxDisp: 25
+    - _TessMin: 10
+    - _TessPhongStrength: 0.5
+    - _TessValue: 16
+    - _TransAmbient: 0.1
+    - _TransDirect: 0.9
+    - _TransNormal: 0.5
+    - _TransScattering: 2
+    - _TransShadow: 0.5
+    - _TransStrength: 1
+    - _TransmissionShadow: 0.5
+    - _VertexOffsetmapping: 0.07
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0.90573764, a: 0}
+    - _EdgeColor: {r: 0, g: 7.650176, b: 14.146389, a: 0}
+    - _Emission: {r: 2.164706, g: 5.992157, b: 4.6431375, a: 0}
+    - _EmissionColor: {r: 2.164706, g: 5.992157, b: 4.6431375, a: 0}
+    - _SpawnEmission: {r: 0.4784617, g: 4.754717, b: 4.587021, a: 0}
+  m_BuildTextureStacks: []
