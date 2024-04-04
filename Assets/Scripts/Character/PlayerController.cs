@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float gravity;
     [SerializeField] private Animator _animator;
+    [SerializeField] private Transform offsetCenter;
     
     private Vector3 velocity;
 
@@ -59,8 +60,11 @@ public class PlayerController : MonoBehaviour
 
     private void SetCenterOfCharacter()
     {
-        controller.center = new Vector3(headTransform.transform.localPosition.x, 0,
-            headTransform.transform.localPosition.z);
+        Vector3 headPos = headTransform.position;
+        offsetCenter.localPosition = new Vector3(0,offsetCenter.localPosition.y,0) - new Vector3(headTransform.localPosition.x, 0, headTransform.localPosition.z);
+        transform.position = new Vector3(headPos.x, transform.position.y, headPos.z);
+        /*controller.center = new Vector3(headTransform.transform.localPosition.x, 0,
+            headTransform.transform.localPosition.z);*/
     }
 
     private void FixedUpdate()
@@ -75,6 +79,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!hasTurned)
             {
+                SetCenterOfCharacter();
                 transform.Rotate(0, 45 * Mathf.Sign(turnValue.x), 0);
                 hasTurned = true;
             }

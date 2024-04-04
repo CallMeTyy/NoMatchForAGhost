@@ -34,6 +34,7 @@ public class VRInput
     private void OnRelease(InputAction.CallbackContext context)
     {
         isPressed = false;
+        vector2Value = Vector2.zero;
     }
 
     private void OnChangeData(InputAction.CallbackContext context)
